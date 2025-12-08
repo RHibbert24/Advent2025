@@ -44,7 +44,7 @@ class Lock:
 
 lock = Lock(50, 99)
 password = 0
-with open("./Inputs/Day1.txt") as file:
+with open("Day1.txt") as file:
     for line in file:
         command = line.rstrip()
         password += lock.timesThroughZero(command[0], int(command[1:]))
